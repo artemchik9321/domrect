@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="r">
+        <div class="r1"></div>
+        <div class="r2"></div>
+    </div>
+
+    <style>
+        #r
+        {
+            height: 160px;
+            width: 180px;
+            border: dotted blue;
+            margin: 0 auto;
+        }
+        .r1, .r2
+        {
+            height: 60px;
+            width: 140px;
+            border: dotted red;
+            margin: 0 auto;
+        }
+        .r1
+        {
+            margin-top: 15px;
+        }
+    </style>
+    <script> 
+        let mainDiv = document.querySelector("div#r"); 
+        mainDiv.style.border = "solid red";
+        let firstDiv = document.querySelector("div.r1");
+        firstDiv.style.border = "solid blue"; 
+        let secondDiv = document.querySelector("div.r2");
+        secondDiv.style.border = "solid red"; 
+    </script> 
+</body>
+</html>
